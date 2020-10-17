@@ -9,21 +9,13 @@ import UIKit
 
 class MailDetailViewController: UIViewController {
 
+    @IBOutlet weak var labelEmailContent: UILabel!
+    
+    var emailDetail = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelEmailContent.text = emailDetail
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
