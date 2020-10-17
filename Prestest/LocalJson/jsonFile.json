@@ -1,43 +1,53 @@
 {
     "data": [{
         "date": "25 Jun",
-        "message": "ini message tanggal 25 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 25 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 25 JUN",
         "status": 0
     }, {
         "date": "12 Jun",
-        "message": "ini message tanggal 12 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 12 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 12 JUN",
         "status": 0
     }, {
         "date": "11 Jun",
-        "message": "ini message tanggal 11 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 11 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 11 JUN",
         "status": 1
     },{
         "date": "10 Jun",
-        "message": "ini message tanggal 10 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 10 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 10 JUN",
         "status": 1
     },{
         "date": "9 Jun",
-        "message": "ini message tanggal 19 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 09 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 19 JUN",
         "status": 1
     },{
         "date": "1 Jun",
-        "message": "ini message tanggal 1 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 01 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 01 JUN",
         "status": 0
     },{
         "date": "19 Jun",
-        "message": "ini message tanggal 19 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 19 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 19 JUN",
         "status": 0
     },{
         "date": "20 Jun",
-        "message": "ini message tanggal 20 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 20 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 20 JUN",
         "status": 1
     },{
         "date": "15 Jun",
-        "message": "ini message tanggal 15 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 15 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 15 JUN",
         "status": 0
     },{
         "date": "30 Jun",
-        "message": "ini message tanggal 30 Jun",
+        "message": "<!DOCTYPE html><html><body><h1>This is WebView</h1><h2>ini message tanggal 30 Jun tentang hari ini.</h2></body></html>",
+        "subject": "EMAIL 30 JUN",
         "status": 1
     }]
 }

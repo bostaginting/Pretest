@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7L1-iG-ZRP">
-                                <rect key="frame" x="0.0" y="126" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="126" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellView" rowHeight="100" id="HGp-u6-PwQ">
@@ -30,7 +30,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Row to Delete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3o-H5-HVb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Row to Delete or Unread" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3o-H5-HVb">
                                 <rect key="frame" x="20" y="105" width="374" height="21"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -47,21 +47,19 @@
                             <constraint firstItem="7L1-iG-ZRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NS1-0X-4zk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U3o-H5-HVb" secondAttribute="trailing" constant="20" id="aZs-kG-OA2"/>
                             <constraint firstItem="7L1-iG-ZRP" firstAttribute="top" secondItem="U3o-H5-HVb" secondAttribute="bottom" id="gj6-a7-m4r"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="7L1-iG-ZRP" secondAttribute="bottom" constant="-20" id="lny-mS-YZn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7L1-iG-ZRP" secondAttribute="bottom" id="lny-mS-YZn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KVT-lJ-JbI">
                         <barButtonItem key="leftBarButtonItem" title="Sort By Date" id="Lff-Ym-DYH">
                             <connections>
-                                <action selector="buttonSortDate:" destination="BYZ-38-t0r" id="L9i-xw-Umk"/>
+                                <action selector="buttonSort:" destination="BYZ-38-t0r" id="L9i-xw-Umk"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Sort By Unread" style="plain" id="s8B-M7-hk9">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="oog-lv-2H6">
-                                <rect key="frame" x="289" y="7" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sort By Unread"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" tag="1" title="Sort By Unread" id="KxB-pE-TWh">
+                            <connections>
+                                <action selector="buttonSort:" destination="BYZ-38-t0r" id="kOH-zn-jgU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -82,23 +80,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldx-Qs-yFq">
-                                <rect key="frame" x="20" y="128" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="108" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jse-vp-ZJY">
+                                <rect key="frame" x="0.0" y="148.5" width="414" height="713.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PUs-mC-xJ0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PUs-mC-xJ0" firstAttribute="trailing" secondItem="Ldx-Qs-yFq" secondAttribute="trailing" constant="20" id="YZa-U0-LaM"/>
-                            <constraint firstItem="Ldx-Qs-yFq" firstAttribute="leading" secondItem="PUs-mC-xJ0" secondAttribute="leading" constant="20" id="aNs-6g-c1V"/>
-                            <constraint firstItem="Ldx-Qs-yFq" firstAttribute="top" secondItem="PUs-mC-xJ0" secondAttribute="top" constant="40" id="hit-n8-V0t"/>
+                            <constraint firstItem="PUs-mC-xJ0" firstAttribute="bottom" secondItem="jse-vp-ZJY" secondAttribute="bottom" id="JSl-wT-VAD"/>
+                            <constraint firstItem="Ldx-Qs-yFq" firstAttribute="leading" secondItem="PUs-mC-xJ0" secondAttribute="leading" constant="20" id="KMn-VM-3dN"/>
+                            <constraint firstItem="PUs-mC-xJ0" firstAttribute="trailing" secondItem="Ldx-Qs-yFq" secondAttribute="trailing" constant="20" id="VRT-fc-Zo9"/>
+                            <constraint firstItem="jse-vp-ZJY" firstAttribute="top" secondItem="Ldx-Qs-yFq" secondAttribute="bottom" constant="20" id="YPr-ij-dGf"/>
+                            <constraint firstItem="Ldx-Qs-yFq" firstAttribute="top" secondItem="PUs-mC-xJ0" secondAttribute="top" constant="20" id="caM-FA-Mkg"/>
+                            <constraint firstItem="jse-vp-ZJY" firstAttribute="leading" secondItem="PUs-mC-xJ0" secondAttribute="leading" id="uE0-d6-nFl"/>
+                            <constraint firstItem="PUs-mC-xJ0" firstAttribute="trailing" secondItem="jse-vp-ZJY" secondAttribute="trailing" id="xAg-Hw-1Gf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AlV-Qu-P0R"/>
                     <connections>
                         <outlet property="labelEmailContent" destination="Ldx-Qs-yFq" id="Sav-ji-che"/>
+                        <outlet property="webViewDetail" destination="jse-vp-ZJY" id="MVl-TE-HXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUD-Y2-EX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
