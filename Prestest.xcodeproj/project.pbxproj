@@ -18,6 +18,8 @@
 		0170370D2539C5D000FD376E /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 0170370C2539C5D000FD376E /* jsonFile.json */; };
 		01CCCD152539F0AC00E0D0F4 /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCD142539F0AC00E0D0F4 /* EmailModel.swift */; };
 		01CCCD1D2539F40800E0D0F4 /* EmailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCD1C2539F40800E0D0F4 /* EmailDataModel.swift */; };
+		01DA716D253ADAC1003A5B56 /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA716B253ADAC1003A5B56 /* EmailTableViewCell.swift */; };
+		01DA716E253ADAC1003A5B56 /* EmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DA716C253ADAC1003A5B56 /* EmailTableViewCell.xib */; };
 		01EBBBE02538AC4E00A39707 /* MailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBBDF2538AC4E00A39707 /* MailDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		0170370C2539C5D000FD376E /* jsonFile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
 		01CCCD142539F0AC00E0D0F4 /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
 		01CCCD1C2539F40800E0D0F4 /* EmailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDataModel.swift; sourceTree = "<group>"; };
+		01DA716B253ADAC1003A5B56 /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		01DA716C253ADAC1003A5B56 /* EmailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailTableViewCell.xib; sourceTree = "<group>"; };
 		01EBBBDF2538AC4E00A39707 /* MailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,8 @@
 				013770A92538467B001E6545 /* LaunchScreen.storyboard */,
 				013770AC2538467B001E6545 /* Info.plist */,
 				01EBBBDF2538AC4E00A39707 /* MailDetailViewController.swift */,
+				01DA716B253ADAC1003A5B56 /* EmailTableViewCell.swift */,
+				01DA716C253ADAC1003A5B56 /* EmailTableViewCell.xib */,
 			);
 			path = Prestest;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				013770AB2538467B001E6545 /* LaunchScreen.storyboard in Resources */,
+				01DA716E253ADAC1003A5B56 /* EmailTableViewCell.xib in Resources */,
 				013770A82538467B001E6545 /* Assets.xcassets in Resources */,
 				013770A625384679001E6545 /* Main.storyboard in Resources */,
 				0170370D2539C5D000FD376E /* jsonFile.json in Resources */,
@@ -288,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				013770A325384679001E6545 /* ViewController.swift in Sources */,
+				01DA716D253ADAC1003A5B56 /* EmailTableViewCell.swift in Sources */,
 				0137709F25384679001E6545 /* AppDelegate.swift in Sources */,
 				01CCCD1D2539F40800E0D0F4 /* EmailDataModel.swift in Sources */,
 				01CCCD152539F0AC00E0D0F4 /* EmailModel.swift in Sources */,

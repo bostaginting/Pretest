@@ -14,11 +14,13 @@ struct DataEmail {
     
     var date: String?
     var email: String?
+    var status: Int?
     
     private enum CodingKeys: String, CodingKey {
         
         case date = "date"
         case email = "message"
+        case status = "status"
         
         var description: String {
             return self.rawValue
@@ -32,7 +34,21 @@ extension Self: Decodable {
         
         date = try container.decode(String.self, forKey: .date)
         email = try container.decode(String.self, forKey: .email)
+        status = try container.decode(Int.self, forKey: .status)
     }
+}
+
+extension DataEmail {
+    
+    var convertedDate: Date {
+        return dateFormatter.date(from: date ?? "") ?? Date()
+    }
+    
+    private var dateFormatter: DateFormatter {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd MMM"
+            return dateFormatter
+        }
 }
 
 
