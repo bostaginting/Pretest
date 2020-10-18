@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func buttonSort(_ sender: UIBarButtonItem) {
         if (sender.tag == 0) {
             sortedDate = !sortedDate
-            _ = loadJsonLocal(fileName: "jsonFile", sort: "date" )
+            _ = loadJsonLocal(fileName: "jsonFile", sort: "date")
         } else {
             sortedStart = true
             sortedUnread = !sortedUnread
@@ -118,4 +118,3 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return swipeActions
     }
 }
-

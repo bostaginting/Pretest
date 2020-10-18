@@ -11,7 +11,6 @@ import WebKit
 class MailDetailViewController: UIViewController {
 
     @IBOutlet weak var labelEmailContent: UILabel!
-    
     @IBOutlet weak var webViewDetail: WKWebView!
     
     var emailDetail = ""
