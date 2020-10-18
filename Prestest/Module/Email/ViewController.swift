@@ -114,9 +114,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.tableViewEmail.reloadData()
         }
         
-        
         let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, unreadAction])
-        
         return swipeActions
     }
 }

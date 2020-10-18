@@ -111,18 +111,14 @@
 		0137709D25384679001E6545 /* Prestest */ = {
 			isa = PBXGroup;
 			children = (
+				01D236D6253C61D0007E89AA /* Module */,
 				01CCCD132539F09900E0D0F4 /* Models */,
 				0170370B2539C59400FD376E /* LocalJson */,
 				0137709E25384679001E6545 /* AppDelegate.swift */,
 				013770A025384679001E6545 /* SceneDelegate.swift */,
-				013770A225384679001E6545 /* ViewController.swift */,
-				013770A425384679001E6545 /* Main.storyboard */,
 				013770A72538467B001E6545 /* Assets.xcassets */,
 				013770A92538467B001E6545 /* LaunchScreen.storyboard */,
 				013770AC2538467B001E6545 /* Info.plist */,
-				01EBBBDF2538AC4E00A39707 /* MailDetailViewController.swift */,
-				01DA716B253ADAC1003A5B56 /* EmailTableViewCell.swift */,
-				01DA716C253ADAC1003A5B56 /* EmailTableViewCell.xib */,
 			);
 			path = Prestest;
 			sourceTree = "<group>";
@@ -160,6 +156,34 @@
 				01CCCD1C2539F40800E0D0F4 /* EmailDataModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		01D236D6253C61D0007E89AA /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				01D236D7253C61E2007E89AA /* Email */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		01D236D7253C61E2007E89AA /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				013770A225384679001E6545 /* ViewController.swift */,
+				013770A425384679001E6545 /* Main.storyboard */,
+				01D236D9253C61F7007E89AA /* EmailDetail */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		01D236D9253C61F7007E89AA /* EmailDetail */ = {
+			isa = PBXGroup;
+			children = (
+				01EBBBDF2538AC4E00A39707 /* MailDetailViewController.swift */,
+				01DA716B253ADAC1003A5B56 /* EmailTableViewCell.swift */,
+				01DA716C253ADAC1003A5B56 /* EmailTableViewCell.xib */,
+			);
+			path = EmailDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
